@@ -1,0 +1,27 @@
+@import "./utils/vars";
+
+@import "./base/common";
+@import "./base/hidden";
+@import "./components/container";
+@import "./components/current";
+@import "./components/primary";
+@import "./components/main";
+@import "./components/img";
+@import "./components/section";
+@import "./utils/pleaceholder";
+
+@import "./base/reset";
+
+@import "./layout/logo";
+@import "./layout/header";
+
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/employment";
+@import "./layout/team";
+@import "./layout/social-network";
+@import "./layout/client";
+@import "./layout/filter";
+@import "./layout/project";
+@import "./layout/footer";
+@import "./components/modal";

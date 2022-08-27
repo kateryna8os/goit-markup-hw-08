@@ -1,0 +1,59 @@
+.employment {
+  padding-top: 0;
+}
+
+.employment-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--main-title-color);
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+
+.employment-list {
+  display: flex;
+  & .employment-item + .employment-item {
+    margin-left: 30px;
+  }
+}
+
+.employment-item {
+  width: 370px;
+}
+
+// .employment-list .employment-item + .employment-item {
+//   margin-left: 30px;
+// }
+
+.employment-img {
+  position: relative;
+}
+
+.employment-top-text {
+  position: absolute;
+  display: flex;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-white);
+  background-color: var(--bgc-top-text);
+}

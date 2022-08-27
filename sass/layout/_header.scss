@@ -1,0 +1,109 @@
+.header {
+  border-bottom: 1px solid var(--border-line);
+}
+
+.navigation__list {
+  display: flex;
+  margin-left: 93px;
+  & .item + .item {
+    margin-left: 50px;
+  }
+  & li:last-child {
+    margin-right: 0px;
+  }
+}
+
+// .navigation__list .item + .item {
+//   margin-left: 50px;
+// }
+
+// .navigation__list li:last-child {
+//   margin-right: 0px;
+// }
+
+.contact {
+  display: flex;
+  margin-left: auto;
+  & .item + .item {
+    margin-left: 50px;
+  }
+}
+
+// .contact .item + .item {
+//   margin-left: 50px;
+// }
+
+.navigation__logo-link {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+}
+
+// .navigation__logo-link:hover,
+// .navigation__logo-link:focus,
+// .navigation__logo-link:active {
+//   color: var(--accent-color);
+// }
+
+.contact__item-icon {
+  fill: var(--main-bottom-color);
+  margin-right: 10px;
+  background-position: center;
+  background-size: cover;
+
+  align-items: center;
+  .container__link:hover &,
+  .container__link:focus &,
+  .container__link:active & {
+    fill: var(--accent-color);
+  }
+}
+
+// .container__link:hover .contact__item-icon,
+// .container__link:focus .contact__item-icon,
+// .container__link:active .contact__item-icon {
+//   fill: var(--accent-color);
+// }
+
+.container__link {
+  align-items: center;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--main-title-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+}
+
+// .container__link:hover,
+// .container__ink:focus,
+// .container__link:active {
+//   color: var(--accent-color);
+// }
+
+.current {
+  color: var(--accent-color);
+}
