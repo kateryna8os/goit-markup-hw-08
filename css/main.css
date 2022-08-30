@@ -320,6 +320,11 @@ body {
   color: var(--main-title-color);
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 480px) {
+  .features__skills-title {
+    text-align: center;
+  }
+}
 
 .features__skills-text {
   margin-top: 0;
@@ -332,6 +337,11 @@ body {
 
 .employment {
   padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .employment {
+    display: none;
+  }
 }
 
 .employment-title {
