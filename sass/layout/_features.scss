@@ -13,6 +13,11 @@
 
 .features__item {
   width: 100%;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
@@ -48,7 +53,7 @@
   line-height: 1.14;
   color: var(--main-title-color);
   letter-spacing: 0.03em;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 }
