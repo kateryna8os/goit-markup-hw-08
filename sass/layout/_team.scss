@@ -46,6 +46,10 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
   color: var(--main-title-color);
   letter-spacing: 0.03em;
 
