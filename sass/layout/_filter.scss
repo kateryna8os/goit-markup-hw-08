@@ -1,12 +1,17 @@
 .filter-list {
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-    row-gap: 15px;
-    column-gap: 8px;
-  }
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 
 .filter-item:not(:last-child) {
