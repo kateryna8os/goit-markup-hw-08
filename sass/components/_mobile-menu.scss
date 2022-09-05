@@ -1,0 +1,19 @@
+.menu-button {
+  display: inline-flex;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button .is-open .icon-close {
+  display: block;
+}
+
+.menu-button .is-open .icon-menu {
+  display: none;
+}

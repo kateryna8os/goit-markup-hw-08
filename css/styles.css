@@ -160,7 +160,7 @@
 }
 
 .header-link {
-  align-items: center;
+  align-items: center; 
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
