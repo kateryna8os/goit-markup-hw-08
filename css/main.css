@@ -267,8 +267,8 @@ body {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 100%;
   text-align: center;
   background-color: var(--background-color);
@@ -278,15 +278,11 @@ body {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
-}
-
-.hero .container {
-  padding: 0;
 }
 
 .hero__title {
@@ -294,24 +290,18 @@ body {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 670px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   text-transform: uppercase;
   color: var(--color-white);
   letter-spacing: 0.06em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
-    width: 360px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .hero__title {
-    font-size: 26px;
-    line-height: 1.61;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
