@@ -216,6 +216,9 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.container__link:hover, .container__link:focus, .container__link:active {
+  color: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
   .container__link {
     -webkit-box-align: center;
@@ -240,28 +243,46 @@ body {
     padding-bottom: 32px;
   }
 }
-.container__link:hover, .container__link:focus, .container__link:active {
+
+.container__contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container__contact-link:hover, .container__contact-link:focus, .container__contact-link:active {
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .container__contact-link {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__contact-link {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .current {
   color: var(--accent-color);
-}
-
-@media screen and (max-width: 767px) {
-  .header-text-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
 }
 
 .hero {
@@ -1575,7 +1596,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .mob-menu {
+  .mobmenu {
     display: none;
   }
 }
@@ -1605,4 +1626,105 @@ body {
 
 .menu-button .is-open .icon-menu {
   display: none;
+}
+
+.mobmenu {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-white);
+  top: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mobmenu__item {
+  margin-bottom: 35px;
+}
+
+.mobmenu__item:last-child {
+  margin-bottom: 0;
+}
+
+.mobmenu__container-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--main-title-color);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobmenu__container-link:hover, .mobmenu__container-link:focus, .mobmenu__container-link:active {
+  color: var(--accent-color);
+}
+
+.mobmenu__contact {
+  text-align: justify;
+  margin-top: 302px;
+}
+
+.mobmenu__tel-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobmenu__email-item {
+  margin-top: 32px;
+}
+
+.mobmenu__email-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: var(--main-bottom-color);
+}
+
+.mobmenu__contact-icon {
+  fill: var(--main-bottom-color);
+  margin-right: 10px;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container__link:hover .mobmenu__contact-icon, .container__link:focus .mobmenu__contact-icon, .container__link:active .mobmenu__contact-icon {
+  fill: var(--accent-color);
+}
+
+.mobmenu__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+}
+
+.mobmenu__soc-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobmenu__soc-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobmenu__soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
