@@ -1616,16 +1616,20 @@ body {
   }
 }
 
-.menu-button .icon-close {
+.menu-button .is-open {
   display: none;
 }
 
-.menu-button .is-open .icon-close {
-  display: block;
+.menu-container .is-open {
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
 }
 
-.menu-button .is-open .icon-menu {
-  display: none;
+.menu-container .menu-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--color-white);
 }
 
 .mobmenu {
@@ -1639,6 +1643,8 @@ body {
   padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .mobmenu__item {
